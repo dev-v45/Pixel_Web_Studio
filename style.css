@@ -232,4 +232,96 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+    
+/* PIXELWEB STUDIO ENQUIRY FORM */
+
+.contact-section {
+  padding: 90px 8%;
+  background: #101d2b;
+  color: #ffffff;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+}
+
+.contact-info h2 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.contact-info p {
+  color: #b8c5ce;
+  line-height: 1.7;
+}
+
+#enquiryForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#enquiryForm label {
+  color: #e7eeee;
+  font-size: 14px;
+}
+
+#enquiryForm input,
+#enquiryForm select,
+#enquiryForm textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #354655;
+  border-radius: 8px;
+  background: #192a39;
+  color: white;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+#enquiryForm input:focus,
+#enquiryForm select:focus,
+#enquiryForm textarea:focus {
+  outline: 2px solid #80d9bd;
+}
+
+#enquiryForm .privacy-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#enquiryForm .privacy-note input {
+  width: auto;
+}
+
+#enquiryForm button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #80d9bd;
+  color: #10221f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#formStatus {
+  color: #80d9bd;
+}
+
+@media (max-width: 700px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .contact-info h2 {
+    font-size: 32px;
+  }
+}
+
 }
