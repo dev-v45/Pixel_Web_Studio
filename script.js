@@ -45,3 +45,25 @@ if (footer) {
     footer.textContent =
         `© ${new Date().getFullYear()} PixelWeb Studio. Built with purpose.`;
 }
+
+// PIXELWEB STUDIO ENQUIRY FORM
+
+const enquiryForm = document.getElementById("enquiryForm");
+
+if (enquiryForm) {
+  enquiryForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (!enquiryForm.reportValidity()) {
+      return;
+    }
+
+    const status = document.getElementById("formStatus");
+
+    status.textContent =
+      "Your form looks good! Database connection is not set up yet.";
+
+    enquiryForm.reset();
+  });
+}
+
