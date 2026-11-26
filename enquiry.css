@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --background: #0c1420;
+  --surface: #142333;
+  --input: #1a2c3d;
+  --mint: #80d9bd;
+  --white: #f4f7f8;
+  --muted: #a5b3bf;
+  --border: #304354;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+.topbar {
+  max-width: 1150px;
+  margin: auto;
+  padding: 28px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--mint);
+}
+
+.back-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link:hover {
+  color: var(--mint);
+}
+
+.page-container {
+  max-width: 1050px;
+  margin: 55px auto 90px;
+  padding: 0 25px;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 75px;
+  align-items: start;
+}
+
+.intro {
+  padding-top: 45px;
+  position: sticky;
+  top: 35px;
+}
+
+.eyebrow {
+  color: var(--mint);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+}
+
+.intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.intro h1 span {
+  color: var(--mint);
+}
+
+.intro-text {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 390px;
+}
+
+.trust-note {
+  margin-top: 40px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.trust-note span {
+  color: var(--mint);
+  margin-right: 8px;
+}
+
+.form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 38px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+}
+
+.form-heading {
+  margin-bottom: 30px;
+}
+
+.form-heading h2 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.form-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.field {
+  margin-bottom: 22px;
+}
+
+.field label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.field label span {
+  color: var(--mint);
+}
+
+.field input,
+.field select,
+.field textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: var(--input);
+  color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--mint);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #8797a5;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 125px;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 8px 0 25px;
+}
+
+.consent input {
+  accent-color: var(--mint);
+  margin-top: 3px;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  background: var(--mint);
+  color: #10221f;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #9be7d0;
+  transform: translateY(-2px);
+}
+
+.submit-btn span {
+  margin-left: 8px;
+}
+
+#formStatus {
+  color: var(--mint);
+  font-size: 13px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.form-footnote {
+  color: #8293a2;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 18px;
+  line-height: 1.6;
+}
+
+footer {
+  border-top: 1px solid #243342;
+  color: var(--muted);
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
+}
+
+@media (max-width: 750px) {
+  .page-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 25px;
+  }
+
+  .intro {
+    position: static;
+    padding-top: 10px;
+  }
+
+  .intro h1 {
+    font-size: 42px;
+  }
+
+  .form-card {
+    padding: 25px 20px;
+  }
+
+  .topbar {
+    padding: 22px 20px;
+  }
+}
