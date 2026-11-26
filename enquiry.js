@@ -1,8 +1,8 @@
 
 // PIXELWEB STUDIO - SUPABASE CONNECTION
 
-const SUPABASE_URL = "YOUR_PROJECT_URL";
-const SUPABASE_KEY = "YOUR_PUBLISHABLE_KEY";
+const SUPABASE_URL = "https://eplcnunuyfuykrgfqbtc.supabase.co/rest/v1/";
+const SUPABASE_KEY = "sb_publishable__FzasPUB9aCLyELROBmofw_mIZCFOgh";
 
 const client = window.supabase.createClient(
   SUPABASE_URL,
