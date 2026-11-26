@@ -85,5 +85,87 @@
     </footer>
 
     <script src="script.js"></script>
+    
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+
+    <div class="contact-info">
+      <p class="section-label">LET'S WORK TOGETHER</p>
+      <h2>Have a project in mind?</h2>
+      <p>
+        Tell us about your business and the website
+        you need. We'll get back to you.
+      </p>
+    </div>
+
+    <form id="enquiryForm">
+
+      <label for="name">Your name *</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label for="email">Email address *</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        required
+      />
+
+      <label for="phone">Phone number</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Your phone number"
+      />
+
+      <label for="business">Business name *</label>
+      <input
+        type="text"
+        id="business"
+        name="business"
+        placeholder="Your business name"
+        required
+      />
+
+      <label for="project">What do you need? *</label>
+      <select id="project" name="project" required>
+        <option value="">Choose a project type</option>
+        <option value="Restaurant website">Restaurant website</option>
+        <option value="Business website">Business website</option>
+        <option value="Portfolio website">Portfolio website</option>
+        <option value="Landing page">Landing page</option>
+        <option value="Other project">Other project</option>
+      </select>
+
+      <label for="message">Tell us about your project *</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Describe your idea..."
+        required
+      ></textarea>
+
+      <label class="privacy-note">
+        <input type="checkbox" id="privacyConsent" required />
+        I agree to be contacted about my enquiry.
+      </label>
+
+      <button type="submit">Send enquiry</button>
+
+      <p id="formStatus" role="status"></p>
+
+    </form>
+  </div>
+</section>
+
 </body>
 </html>
