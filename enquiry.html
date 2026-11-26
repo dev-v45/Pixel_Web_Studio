@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Start a Project | PixelWeb Studio</title>
+
+  <link rel="stylesheet" href="enquiry.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="logo">PixelWeb<span>.</span></a>
+    <a href="index.html" class="back-link">← Back to home</a>
+  </header>
+
+  <main class="page-container">
+
+    <section class="intro">
+      <p class="eyebrow">START A PROJECT</p>
+
+      <h1>Let's build something <span>great.</span></h1>
+
+      <p class="intro-text">
+        Tell us about your business and your idea.
+        We'll review your enquiry and get back to you.
+      </p>
+
+      <div class="trust-note">
+        <span>✦</span>
+        Every great website starts with a conversation.
+      </div>
+    </section>
+
+    <section class="form-card">
+
+      <div class="form-heading">
+        <h2>Project enquiry</h2>
+        <p>Fill in the details below.</p>
+      </div>
+
+      <form id="enquiryForm">
+
+        <div class="field">
+          <label for="name">Full name <span>*</span></label>
+          <input id="name" name="name" type="text"
+            placeholder="Your full name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address <span>*</span></label>
+          <input id="email" name="email" type="email"
+            placeholder="name@example.com" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel"
+            placeholder="Your contact number">
+        </div>
+
+        <div class="field">
+          <label for="business">Business name <span>*</span></label>
+          <input id="business" name="business" type="text"
+            placeholder="Name of your business" required>
+        </div>
+
+        <div class="field">
+          <label for="project">What kind of website do you need? <span>*</span></label>
+
+          <select id="project" name="project" required>
+            <option value="">Select a project type</option>
+            <option value="Restaurant website">Restaurant website</option>
+            <option value="Business website">Business website</option>
+            <option value="Portfolio website">Portfolio website</option>
+            <option value="Landing page">Landing page</option>
+            <option value="Other project">Other project</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Tell us about your project <span>*</span></label>
+          <textarea id="message" name="message" rows="5"
+            placeholder="What do you want your website to do?"
+            required></textarea>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" id="privacyConsent" required>
+          <span>I agree to be contacted regarding this enquiry.</span>
+        </label>
+
+        <button type="submit" class="submit-btn">
+          Send my enquiry <span>↗</span>
+        </button>
+
+        <p id="formStatus" role="status"></p>
+
+        <p class="form-footnote">
+          Your information will only be used to respond to your enquiry.
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 PixelWeb Studio. Built with purpose.
+  </footer>
+
+  <script src="enquiry.js"></script>
+</body>
+</html>
